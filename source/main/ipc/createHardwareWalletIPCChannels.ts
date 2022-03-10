@@ -8,8 +8,8 @@ import {
   getCardanoAdaAppRendererRequest,
   getExtendedPublicKeyMainResponse,
   getExtendedPublicKeyRendererRequest,
-  getHardwareWalletConnectiontMainRequest,
-  getHardwareWalletConnectiontRendererResponse,
+  getHardwareWalletConnectionMainRequest,
+  getHardwareWalletConnectionRendererResponse,
   getHardwareWalletTransportMainResponse,
   getHardwareWalletTransportRendererRequest,
   handleInitLedgerConnectMainResponse,
@@ -53,8 +53,8 @@ export interface HardwareWalletChannels {
   >;
 
   getHardwareWalletConnectionChannel: IpcChannel<
-    getHardwareWalletConnectiontMainRequest,
-    getHardwareWalletConnectiontRendererResponse
+    getHardwareWalletConnectionMainRequest,
+    getHardwareWalletConnectionRendererResponse
   >;
 
   signTransactionLedgerChannel: IpcChannel<
